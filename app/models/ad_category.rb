@@ -1,0 +1,2 @@
+class AdCategory < ApplicationRecord
+end
