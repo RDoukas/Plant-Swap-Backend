@@ -1,0 +1,8 @@
+{
+  id: message.id,
+  body: message.body,
+  sent: message.friendly_created_at,
+  user_id: message.user_id,
+  username: message.user.username,
+
+}
