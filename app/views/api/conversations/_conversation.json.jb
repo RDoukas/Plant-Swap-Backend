@@ -1,0 +1,7 @@
+{
+  id: conversation.id,
+  sender_id: conversation.sender_id,
+  recipient_id: conversation.recipient_id,
+  ad_id: conversation.ad_id,
+  last_message: conversation.messages.last,
+}
