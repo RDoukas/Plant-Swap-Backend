@@ -1,0 +1,4 @@
+@ads.map do |ad|
+  ad = render partial: "ad.json.jb", locals: {ad: ad} 
+
+end

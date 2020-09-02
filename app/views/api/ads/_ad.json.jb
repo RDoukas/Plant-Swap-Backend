@@ -1,0 +1,11 @@
+
+{
+  id: ad.id,
+  username: ad.user.username,
+  user_id: ad.user_id,
+  title: ad.title,
+  description: ad.description,
+  image_url: ad.image_url,
+  created_at: ad.friendly_created_at, 
+  categories: ad.categories
+}

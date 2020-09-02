@@ -1,0 +1,14 @@
+
+ad = render partial: "ad.json.jb", locals: {ad: @ad}
+
+ad[:user] = render partial: "/api/users/user.json.jb", locals: {user: @ad.user}
+
+ad[:categories] = @ad.categories.map do |category|
+  render partial: "/api/categories/category.json.jb", locals: {category: category}
+end
+
+if current_user
+  ad[:owner] = (@ad.user_id == current_user.id)
+end
+
+ad
