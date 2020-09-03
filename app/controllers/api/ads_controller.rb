@@ -41,7 +41,6 @@ class Api::AdsController < ApplicationController
       title: params[:title],
       user_id: current_user.id,
       description: params[:description],
-      # image_url: params[:image_url],
       image_url: cloudinary_url
     )
     if @ad.save
