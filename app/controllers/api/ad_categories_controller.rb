@@ -9,7 +9,7 @@ class Api::AdCategoriesController < ApplicationController
    render json: {message: "it worked!"}
   else 
    render json: {errors: @ad_category.errors.full_messages}, status: :unprocessable_entity
-  end 
+   end 
  end 
 
 end

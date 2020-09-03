@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
- def create
+  def create
     @message = Message.new(
       body: params[:body],
       user_id: current_user.id,
@@ -11,7 +11,7 @@ class Api::MessagesController < ApplicationController
       render json: { errors: @message.errors.full_messages }, status: :bad_request
     end
   end 
-  
+
   def show
     @message = Message.find_by(id: params[:id])
     @conversation = Conversation.find_by(id: @message.conversation_id)

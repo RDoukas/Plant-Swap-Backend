@@ -1,8 +1,9 @@
 class Api::UsersController < ApplicationController
 
- def create
-  user = User.new(
-      name: params[:name],
+  def create
+    user = User.new(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
@@ -13,7 +14,7 @@ class Api::UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
-  
+
   def show
     @user = User.find_by(id: current_user.id)
     render "show.json.jb"
@@ -21,7 +22,7 @@ class Api::UsersController < ApplicationController
 
   def update
     @user = User.find_by(id: current_user.id)
-   
+      
     @user.username = params[:username] || @user.username
     @user.first_name = params[:first_name] || @user.first_name
     @user.last_name = params[:last_name] || @user.last_name
@@ -34,13 +35,14 @@ class Api::UsersController < ApplicationController
     else 
       render json: { errors: @user.errors.full_messages}
     end
-    
+
   end
 
   def destroy 
     @user = User.find_by(id: current_user.id)
     @user.destroy
     render json: {message: "Your profile has been deleted."}
+
   end
 
 end

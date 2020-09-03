@@ -1,5 +1,5 @@
 class Api::AdsController < ApplicationController
- before_action :authenticate_user, except: [:index, :show]
+  before_action :authenticate_user, except: [:index, :show]
 
   def index 
     @ads = Ad.all
@@ -50,7 +50,7 @@ class Api::AdsController < ApplicationController
       render json: {errors: @ad.errors.full_messages}, status: :unprocessable_entity
     end 
   end
- 
+
 
   def update
     @ad = Ad.find_by(id: params[:id])
