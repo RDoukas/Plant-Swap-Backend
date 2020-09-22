@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: plant_swap_backend_development
+  database: plant_swap_development
 
 
   # The specified database role being used to connect to postgres.
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: plant_swap_backend_test
+  database: plant_swap_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: plant_swap_backend_production
+  database: plant_swap_production
   username: plant_swap_backend
-  password: <%= ENV['PLANT_SWAP_BACKEND_DATABASE_PASSWORD'] %>
+  password: <%= ENV['PLANT_SWAP_DATABASE_PASSWORD'] %>
