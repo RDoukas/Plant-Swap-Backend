@@ -3,27 +3,27 @@ Rails.application.routes.draw do
   # get "/photos" => "photos#index"
 
   namespace :api do
-    get "/ads" => "ads#index"
-    post "/ads" => "ads#create"
-    get "/ads/:id" => "ads#show"
-    patch "/ads/:id" => "ads#update"
-    delete "/ads/:id" => "ads#destroy"
+    get "/api/ads" => "ads#index"
+    post "/api/ads" => "ads#create"
+    get "/api/ads/:id" => "ads#show"
+    patch "/api/ads/:id" => "ads#update"
+    delete "/api/ads/:id" => "ads#destroy"
 
-    get "/categories" => "categories#index"
+    get "/api/categories" => "categories#index"
 
-    get "/conversations" => "conversations#index"
-    post "/conversations" => "conversations#create"
-    get "/conversations/:id" => "conversations#show"
-    delete "/conversations/:id" => "conversations#destroy"
+    get "/api/conversations" => "conversations#index"
+    post "/api/conversations" => "conversations#create"
+    get "/api/conversations/:id" => "conversations#show"
+    delete "/api/conversations/:id" => "conversations#destroy"
 
-    post "/messages" => "messages#create"
-    post "/messages/:id" => "messages#show"
+    post "/api/messages" => "messages#create"
+    post "/api/messages/:id" => "messages#show"
     
-    post "/users" => "users#create"
-    get "/users/:id" => "users#show"
-    patch "/users/:id" => "users#update"
-    delete "/users/:id" => "users#destroy"
-    post "/sessions" => "sessions#create"
+    post "/api/users" => "users#create"
+    get "/api/users/:id" => "users#show"
+    patch "/api/users/:id" => "users#update"
+    delete "/api/users/:id" => "users#destroy"
+    post "/api/sessions" => "sessions#create"
 
   end
 end
