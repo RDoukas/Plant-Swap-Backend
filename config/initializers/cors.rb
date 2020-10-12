@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins  'https://chi-plant-swapp.netlify.app/'
+    origins 'localhost:8080', 'https://chi-plant-swapp.netlify.app/
 
     resource '*',
       headers: :any,
