@@ -1,3 +1,4 @@
+
 require_relative 'boot'
 
 require "rails"
@@ -19,7 +20,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module PlantSwapFront
+module PlantSwapBackend
   class Application < Rails::Application
     config.generators.assets = false
     config.generators.helper = false
