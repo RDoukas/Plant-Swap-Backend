@@ -6,8 +6,8 @@ User.create!([
   {username: "Betty", password: "password", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
   {username: "alex", password: "password", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
   {username: "beccabagels", password: "password", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
-  {username: nil, password: "password", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
-  {username: nil, password: "password", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"}
+  {username: "rdskater", password: "password", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
+  {username: "Tiffy", password: "password", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"}
 ])
 
 Ad.create!([
