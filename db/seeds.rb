@@ -1,13 +1,14 @@
 User.create!([
-  {username: "SNix", password: "password", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
-  {username: "amyers", password: "password", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
-  {username: "carl", password: "password", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
-  {username: "JakeSnake", password: "password", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
-  {username: "Betty", password: "password", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
-  {username: "alex", password: "password", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
-  {username: "beccabagels", password: "password", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
-  {username: "rdskater", password: "password", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
-  {username: "Tiffy", password: "password", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"}
+  {username: "SNix", password_digest: "$2a$12$s9OC4uZRMy2fFq.SIS/5.eqQM1Cz1hsZO8XuOwFCwv5NH6IRkXcCS", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
+  {username: "amyers", password_digest: "$2a$12$qOqtuW3DCl7gnihpNTqM9eMUU7d9/nZDPr3NJe0Vg3c0T1Fc35JTO", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
+  {username: "carl", password_digest: "$2a$12$8h6r7FjYOxYb0SP7WM.dnOkWSfDInT7m.PjIXrkg.oZvbCNDdWRTy", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
+  {username: "JakeSnake", password_digest: "$2a$12$3u2pPaJmzgfAFJbAMeCGTuwTHk9Brls4B2LZLr5g6eQ6/c8RRb6y.", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
+  {username: "Betty", password_digest: "$2a$12$V6pZb2QvX8bLiOVLPqWruOsmeZahf.iO8axv/9nw8xtJPeWEBaa.S", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
+  {username: "alex", password_digest: "$2a$12$Uq75rL1GUq7D6i3wPCRC5e.vh5phLXsdHbLidnZibhMpBQDmoJxoK", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
+  {username: "beccabagels", password_digest: "$2a$12$o3c7CmWKO0zOS3w9yi5n2OMJ61PPjmTBdhwWAB8dW.QqGxpwzgXDW", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
+  {username: "bec", password_digest: "$2a$12$yEJekIYUrBqgz1EYxfbIqOtFLh1BDa3erowNeNpaDZjZlg4z3yXVa", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
+  {username: "tiff", password_digest: "$2a$12$HCfMSaaBd0MwXiy7v1YRgulxAItCsJlhMo3BeoR3uDWQyl0LRpGhm", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"},
+  {username: nil, password_digest: "$2a$12$JBBUuKCX4shuVAeQvlHVTeOrjWJhZgP1hQUpEDKFx7RGy.2HGviwC", first_name: "liz", last_name: "", email: "liz@gmail.com"}
 ])
 
 Ad.create!([
@@ -44,7 +45,6 @@ Category.create!([
   {name: "Seeds"},
   {name: "Potted"}
 ])
-
 AdCategory.create!([
   {category_id: 2, ad_id: 4},
   {category_id: 3, ad_id: 4},
@@ -90,16 +90,17 @@ AdCategory.create!([
   {category_id: 18, ad_id: 5},
   {category_id: 11, ad_id: 5}
 ])
+
 Conversation.create!([
   {sender_id: 2, recipient_id: 2, ad_id: 1},
-  {sender_id: 3, recipient_id: 1, ad_id: 1},
   {sender_id: 1, recipient_id: 5, ad_id: 4},
   {sender_id: 2, recipient_id: 3, ad_id: 3},
   {sender_id: 3, recipient_id: 5, ad_id: 4},
   {sender_id: 3, recipient_id: 2, ad_id: 2},
-  {sender_id: 3, recipient_id: 2, ad_id: 2}
+  {sender_id: 2, recipient_id: 5, ad_id: 2},
+  {sender_id: 7, recipient_id: 5, ad_id: 2},
+  {sender_id: 7, recipient_id: 2, ad_id: 10}
 ])
-
 Message.create!([
   {body: " Hi! Is your plant still available?", user_id: 2, conversation_id: 1},
   {body: " Yes it is, are you free to pick it up this week?", user_id: 1, conversation_id: 1},
@@ -117,6 +118,10 @@ Message.create!([
   {body: " I've always wanted a swiss cheese plant and have been dying to try propagation!! When can you drop it off?", user_id: 1, conversation_id: 6},
   {body: " Yes I would! I've always wanted an orchid! Are you free this week? ", user_id: 3, conversation_id: 4},
   {body: " Yes I am! How does Tuesday sound? I'm around all day!", user_id: 1, conversation_id: 4},
-  {body: " Yes I would. I'm in the loop. Does that work for you? ", user_id: 5, conversation_id: 5}
+  {body: " Yes I would. I'm in the loop. Does that work for you? ", user_id: 5, conversation_id: 5},
+  {body: "Hi!", user_id: 2, conversation_id: 10},
+  {body: "Hey this plant is so cute! ", user_id: 7, conversation_id: 11},
+  {body: "hello!", user_id: 7, conversation_id: 12}
 ])
+
 
