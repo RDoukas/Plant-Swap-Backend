@@ -1,49 +1,49 @@
-User.create!([
-  {username: "SNix", password: "password", password_digest: "$2a$12$s9OC4uZRMy2fFq.SIS/5.eqQM1Cz1hsZO8XuOwFCwv5NH6IRkXcCS", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
-  {username: "amyers", password: "password", password_digest: "$2a$12$qOqtuW3DCl7gnihpNTqM9eMUU7d9/nZDPr3NJe0Vg3c0T1Fc35JTO", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
-  {username: "carl", password: "password", password_digest: "$2a$12$8h6r7FjYOxYb0SP7WM.dnOkWSfDInT7m.PjIXrkg.oZvbCNDdWRTy", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
-  {username: "JakeSnake", password: "password", password_digest: "$2a$12$3u2pPaJmzgfAFJbAMeCGTuwTHk9Brls4B2LZLr5g6eQ6/c8RRb6y.", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
-  {username: "Betty", password: "password", password_digest: "$2a$12$V6pZb2QvX8bLiOVLPqWruOsmeZahf.iO8axv/9nw8xtJPeWEBaa.S", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
-  {username: "alex", password: "password", password_digest: "$2a$12$Uq75rL1GUq7D6i3wPCRC5e.vh5phLXsdHbLidnZibhMpBQDmoJxoK", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
-  {username: "beccabagels", password: "password", password_digest: "$2a$12$o3c7CmWKO0zOS3w9yi5n2OMJ61PPjmTBdhwWAB8dW.QqGxpwzgXDW", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
-  {username: "bec", password: "password", password_digest: "$2a$12$yEJekIYUrBqgz1EYxfbIqOtFLh1BDa3erowNeNpaDZjZlg4z3yXVa", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
-  {username: "tiff", password: "password", password_digest: "$2a$12$HCfMSaaBd0MwXiy7v1YRgulxAItCsJlhMo3BeoR3uDWQyl0LRpGhm", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"},
-  {username: nil, password: "password", password_digest: "$2a$12$JBBUuKCX4shuVAeQvlHVTeOrjWJhZgP1hQUpEDKFx7RGy.2HGviwC", first_name: "liz", last_name: "", email: "liz@gmail.com"}
-])
-Ad.create!([
-  {title: "Burritto Succulent", user_id: 5, description: " I have an adorable burrito succulent potted in a 3 inch ceramic pot. These guys grow like crazy and will trail over the pot. They're great to hang!  Let me know if you have any questions. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596668993/f3xcsqxwtjndawz4qowb.jpg"},
-  {title: "Easy Elephant Bush", user_id: 5, description: " I have a great Elephant bush I'd love to pass on! I've had the plant for a year and it's already grown so much! It's perfect to hang or put on a table. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596669271/gw0ypd6leocchaynaqxr.jpg"},
-  {title: "Pink Begonia Clippings", user_id: 6, description: " I have a couple clippings of my pink begonia that have started to root in a glass of water. My original plant wouldn't stop growing and I thought I'd try propagation!! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596721703/xoweaqklb8muy8bh320c.jpg"},
-  {title: "Pink Orchid", user_id: 1, description: " This orchid has brought me joy for years! I'll be moving within the month and would love to give her a loving home! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596670737/pg8otvnkvexpleegarrv.jpg"},
-  {title: "Swiss Cheese Plant", user_id: 3, description: " I have a wonderful Swiss Cheese Plant (monstera deliciosa) that's outgrowing it's space. I have a clipping that I temporarily put in a nursery pot but this should be treated as a propagation.", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596672511/ik0yvpjuh0urvdzjroyx.jpg"},
-  {title: "Happy Pincushion", user_id: 3, description: " I have a 3 inch pot with 3 Happy Bean(Pincushion Peperomia) in it. One is a propagation from a another plant in the pot. These things grow like CRAZY and are great to propagate, especially cute gifts! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596672773/lvkipqrvtaeptsyj5lkp.jpg"},
-  {title: "Desert Pinwheel ", user_id: 3, description: "   I have a desert pinwheel rose that I’d love to share with a fellow plant lover! They’re great for bedding, can be kept indoors or outdoors! It’s requires a little more care so perfect if you’re trying to step up your plant game! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596827085/p74bid5qmpo3aavx8xau.jpg"},
-  {title: "Succulent assortment", user_id: 3, description: " I have three different succulents in a 3 inch pot together. The jade succulent is a recent cutting from a larger plant. It's starting to grow roots and is growing a crown but is very fragile. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596678481/fhqw0wsqwsb5irko6okm.jpg"},
-  {title: "Elephant Ear", user_id: 2, description: " I have had this beautiful elephant ear for about two years. With an upcoming cross country move I sadly have to part ways. Hope I can find her a good home!", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596720840/r0l7rdcl9veiwsmwnwm6.jpg"},
-  {title: "Moon Cactus", user_id: 2, description: " I have a great moon cactus! It comes in a nursery pot. I'd love to give her a new home! Let me know if you have any questions! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596721127/cxpzkdkfrpgviztvdckb.jpg"}
-])
-Category.create!([
-  {name: "Drop Off"},
-  {name: "Pick Up"},
-  {name: "Easy Care"},
-  {name: "Medium Care"},
-  {name: "Advanced Care"},
-  {name: "Bright Light"},
-  {name: "Low Light"},
-  {name: "Pet Friendly"},
-  {name: "Air Purifying"},
-  {name: "Tropical"},
-  {name: "Blooming"},
-  {name: "Fern"},
-  {name: "Succulent"},
-  {name: "Vine"},
-  {name: "Hanging Plant"},
-  {name: "Herbs"},
-  {name: "Tree"},
-  {name: "Propogation"},
-  {name: "Seeds"},
-  {name: "Potted"}
-])
+# User.create!([
+#   {username: "SNix", password: "password", password_digest: "$2a$12$s9OC4uZRMy2fFq.SIS/5.eqQM1Cz1hsZO8XuOwFCwv5NH6IRkXcCS", first_name: "Steph", last_name: "Nixon", email: "snixon@gmail.com"},
+#   {username: "amyers", password: "password", password_digest: "$2a$12$qOqtuW3DCl7gnihpNTqM9eMUU7d9/nZDPr3NJe0Vg3c0T1Fc35JTO", first_name: "Amy", last_name: "Myers", email: "amyers@gmail.com"},
+#   {username: "carl", password: "password", password_digest: "$2a$12$8h6r7FjYOxYb0SP7WM.dnOkWSfDInT7m.PjIXrkg.oZvbCNDdWRTy", first_name: "Carl", last_name: "Hauck", email: "carl@gmail.com"},
+#   {username: "JakeSnake", password: "password", password_digest: "$2a$12$3u2pPaJmzgfAFJbAMeCGTuwTHk9Brls4B2LZLr5g6eQ6/c8RRb6y.", first_name: "Jacob", last_name: "Doukas", email: "JakeSnake@gmail.com"},
+#   {username: "Betty", password: "password", password_digest: "$2a$12$V6pZb2QvX8bLiOVLPqWruOsmeZahf.iO8axv/9nw8xtJPeWEBaa.S", first_name: "Betty", last_name: "Doukas", email: "Betty@gmail.com"},
+#   {username: "alex", password: "password", password_digest: "$2a$12$Uq75rL1GUq7D6i3wPCRC5e.vh5phLXsdHbLidnZibhMpBQDmoJxoK", first_name: "Alex", last_name: "Rosales", email: "alex@gmail.com"},
+#   {username: "beccabagels", password: "password", password_digest: "$2a$12$o3c7CmWKO0zOS3w9yi5n2OMJ61PPjmTBdhwWAB8dW.QqGxpwzgXDW", first_name: "Becca", last_name: "Doukas", email: "becca@gmail.com"},
+#   {username: "bec", password: "password", password_digest: "$2a$12$yEJekIYUrBqgz1EYxfbIqOtFLh1BDa3erowNeNpaDZjZlg4z3yXVa", first_name: "Rebecca", last_name: "Doukas", email: "rebecca@gmail.com"},
+#   {username: "tiff", password: "password", password_digest: "$2a$12$HCfMSaaBd0MwXiy7v1YRgulxAItCsJlhMo3BeoR3uDWQyl0LRpGhm", first_name: "Tiff", last_name: "Smith", email: "Smith@gmail.com"},
+#   {username: nil, password: "password", password_digest: "$2a$12$JBBUuKCX4shuVAeQvlHVTeOrjWJhZgP1hQUpEDKFx7RGy.2HGviwC", first_name: "liz", last_name: "", email: "liz@gmail.com"}
+# ])
+# Ad.create!([
+#   {title: "Burritto Succulent", user_id: 5, description: " I have an adorable burrito succulent potted in a 3 inch ceramic pot. These guys grow like crazy and will trail over the pot. They're great to hang!  Let me know if you have any questions. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596668993/f3xcsqxwtjndawz4qowb.jpg"},
+#   {title: "Easy Elephant Bush", user_id: 5, description: " I have a great Elephant bush I'd love to pass on! I've had the plant for a year and it's already grown so much! It's perfect to hang or put on a table. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596669271/gw0ypd6leocchaynaqxr.jpg"},
+#   {title: "Pink Begonia Clippings", user_id: 6, description: " I have a couple clippings of my pink begonia that have started to root in a glass of water. My original plant wouldn't stop growing and I thought I'd try propagation!! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596721703/xoweaqklb8muy8bh320c.jpg"},
+#   {title: "Pink Orchid", user_id: 1, description: " This orchid has brought me joy for years! I'll be moving within the month and would love to give her a loving home! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596670737/pg8otvnkvexpleegarrv.jpg"},
+#   {title: "Swiss Cheese Plant", user_id: 3, description: " I have a wonderful Swiss Cheese Plant (monstera deliciosa) that's outgrowing it's space. I have a clipping that I temporarily put in a nursery pot but this should be treated as a propagation.", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596672511/ik0yvpjuh0urvdzjroyx.jpg"},
+#   {title: "Happy Pincushion", user_id: 3, description: " I have a 3 inch pot with 3 Happy Bean(Pincushion Peperomia) in it. One is a propagation from a another plant in the pot. These things grow like CRAZY and are great to propagate, especially cute gifts! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596672773/lvkipqrvtaeptsyj5lkp.jpg"},
+#   {title: "Desert Pinwheel ", user_id: 3, description: "   I have a desert pinwheel rose that I’d love to share with a fellow plant lover! They’re great for bedding, can be kept indoors or outdoors! It’s requires a little more care so perfect if you’re trying to step up your plant game! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596827085/p74bid5qmpo3aavx8xau.jpg"},
+#   {title: "Succulent assortment", user_id: 3, description: " I have three different succulents in a 3 inch pot together. The jade succulent is a recent cutting from a larger plant. It's starting to grow roots and is growing a crown but is very fragile. ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596678481/fhqw0wsqwsb5irko6okm.jpg"},
+#   {title: "Elephant Ear", user_id: 2, description: " I have had this beautiful elephant ear for about two years. With an upcoming cross country move I sadly have to part ways. Hope I can find her a good home!", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596720840/r0l7rdcl9veiwsmwnwm6.jpg"},
+#   {title: "Moon Cactus", user_id: 2, description: " I have a great moon cactus! It comes in a nursery pot. I'd love to give her a new home! Let me know if you have any questions! ", image_url: "https://res.cloudinary.com/dzx2kuqwt/image/upload/v1596721127/cxpzkdkfrpgviztvdckb.jpg"}
+# ])
+# Category.create!([
+#   {name: "Drop Off"},
+#   {name: "Pick Up"},
+#   {name: "Easy Care"},
+#   {name: "Medium Care"},
+#   {name: "Advanced Care"},
+#   {name: "Bright Light"},
+#   {name: "Low Light"},
+#   {name: "Pet Friendly"},
+#   {name: "Air Purifying"},
+#   {name: "Tropical"},
+#   {name: "Blooming"},
+#   {name: "Fern"},
+#   {name: "Succulent"},
+#   {name: "Vine"},
+#   {name: "Hanging Plant"},
+#   {name: "Herbs"},
+#   {name: "Tree"},
+#   {name: "Propogation"},
+#   {name: "Seeds"},
+#   {name: "Potted"}
+# ])
 AdCategory.create!([
   {category_id: 2, ad_id: 4},
   {category_id: 3, ad_id: 4},
